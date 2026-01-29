@@ -15,4 +15,10 @@
          name="find_line" 
          output="screen">
    </node>
+
+   	<node pkg="enph353_ros_lab"
+         type="line_follow.py"
+         name="line_follow" 
+         output="screen">
+   </node>
 </launch>
