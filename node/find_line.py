@@ -58,10 +58,10 @@ class LineFindingNode:
             (x, y) coordinates of a point on the line
 
         Raises:
-            ValueError: If the line is not found in the bottom 30 image rows
+            ValueError: If the line is not found in the bottom 150 image rows
         """
         image_height: int = image.shape[0]
-        sample_row_idx: int = image_height - 30
+        sample_row_idx: int = image_height - 150
 
         indices_on_line = self.get_x_indices_on_line(image, sample_row_idx)
 
